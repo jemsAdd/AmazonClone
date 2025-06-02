@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import LayOut from '../../components/LayOut/LayOut';
-import classes from './Payment.module.css';
+import classes from './payment.module.css';
 import { DataContext } from '../../components/DataProvider/DataProvider';
 import ProductCard from '../../components/Product/ProductCard';
-// import { CardElement } from '@stripe/react-stripe-js';
+
+import { useStripe, useElements } from "@stripe/react-stripe-js";
 import CurrencyFormat from '../../components/CurrencyFormat/CurrencyFormat';
 
 function Payment() {
@@ -13,6 +14,9 @@ function Payment() {
   const totalItem = basket?.reduce((amount, item) => item.amount + amount, 0);
   const totalPrice = basket?.reduce((amount, item) => item.price * item.amount + amount, 0);
 
+  const stripe = useStripe();
+   const elements = useElements();
+  
   return (
     <LayOut>
       {/* Payment Page */}
@@ -69,3 +73,6 @@ function Payment() {
 }
 
 export default Payment;
+
+
+

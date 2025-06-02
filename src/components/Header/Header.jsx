@@ -5,7 +5,7 @@ import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
 import LowerHeader from "./LowerHeader";
 import { Link } from "react-router-dom";
-import { DataContext } from "../DataProvider/npm install -g firebase-toolsnpm install -g firebase-tools";
+import { DataContext } from "../DataProvider/DataProvider";
 
 import { auth } from "../../Utility/firebase";
 
