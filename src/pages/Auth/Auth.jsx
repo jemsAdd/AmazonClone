@@ -1,10 +1,10 @@
 import React,{useState,useContext} from "react";
 import classes from "./SignUp.module.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { auth } from "../../Utility/firebase";
+import { auth } from "../../utility/firebase";
 import { signInWithEmailAndPassword,createUserWithEmailAndPassword } from 'firebase/auth';
-import { DataContext } from "../../Components/DataProvider/DataProvider";
-import { Type } from "../../Utility/action.type";
+import { DataContext } from "../../components/DataProvider/DataProvider";
+import { Type } from "../../utility/action.type";
 import { BeatLoader, ClipLoader } from "react-spinners";
 
 

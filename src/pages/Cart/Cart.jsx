@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import LayOut from "../../components/LayOut/LayOut";
 import { DataContext } from "../../components/DataProvider/DataProvider";
-import ProductCard from '../../components/Product/ProductCard';
-import CurrencyFormat from "../../Components/CurrencyFormat/CurrencyFormat";
+import ProductCard from '../../components/Product/ProductCard'
+import CurrencyFormat from "../../components/CurrencyFormat/CurrencyFormat";
 import { Link } from "react-router-dom";
 import classes from "./Cart.module.css";
 import { Type } from "../../utility/action.type";
